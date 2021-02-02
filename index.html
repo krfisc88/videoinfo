@@ -1,0 +1,22 @@
+<head>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <form>
+        <div>
+            <label>Select a video</label>
+            <input type="file" accept="video/*">
+        </div>
+        <button type="submit">Get Info</button>
+    </form>
+</body>
+<script>
+    const electron = require('electron');
+    
+    document.querySelector('form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const file = document.querySelector('input').files[0];
+
+    });
+</script>
+</html>
